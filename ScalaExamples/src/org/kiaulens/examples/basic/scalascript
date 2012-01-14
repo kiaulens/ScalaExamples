@@ -1,0 +1,10 @@
+#!/bin/sh
+exec scala "$0" "$@"
+!#
+if (args isEmpty)
+  println("Hello Stranger!")
+else
+  if (args(0) == "Sebastian")
+    println("Hi")
+  else
+    println("Hello "+args(0))

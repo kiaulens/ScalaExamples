@@ -1,0 +1,27 @@
+
+2.1.2 Die Scala-(De)Compiler
+
+-Scala-Quelltext-Dateien werden in Class-Dateien für die JVM übersetzt
+
+$ scalac <filename>
+$ fsc <filename>
+
+Phasen des Compilers: parse, analyze, uncurry
+-Xprint: <phases>
+-print
+weitere flags: -verbose, -optimise, -explaintypes
+
+Fast Offline Compiler (fsc) = Kompilierungsdaemon
+-verbose
+-reset, leeren des Caches
+-shutdown, Daemon beenden
+
+javap, disassembliert Class-Dateien
+scalap, scala class file decoder (Classpath mit "-cp ." hinzufügen)
+
+Dokumentationsgenerator
+scaladoc
+
+Buildtools:
+maven (http://maven.apache.org/)
+Simple Build Tool (sbt)
